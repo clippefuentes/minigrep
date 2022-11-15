@@ -15,8 +15,6 @@ fn main() {
     println!("Searching for {}", config.query);
     println!("In file {}", config.filename);
     
-    // run(config);
-
     if let Err(e) = run(config) {
         println!("Application Error: {}", e);
         process::exit(1);
